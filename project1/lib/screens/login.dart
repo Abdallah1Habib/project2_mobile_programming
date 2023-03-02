@@ -32,8 +32,14 @@ class loginpage extends StatelessWidget {
           height: 30,
         ),
         ElevatedButton(
-            onPressed: () {},
-            child: Text("Login", style: TextStyle(fontSize: 20)))
+          onPressed: () {},
+          child: Text("Login", style: TextStyle(fontSize: 20)),
+          style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(Colors.green),
+              padding: MaterialStateProperty.all(EdgeInsets.all(12)),
+              shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8)))),
+        )
       ]),
     ));
   }

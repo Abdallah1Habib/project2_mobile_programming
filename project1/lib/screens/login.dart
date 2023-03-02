@@ -9,12 +9,23 @@ class loginpage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(
-      children: const [
+      children: [
         TextField(
           keyboardType: TextInputType.text,
           obscureText: true,
-          decoration: InputDecoration(),
-        )
+          decoration: InputDecoration(
+            hintText: "Enter password : ",
+            enabledBorder: OutlineInputBorder(
+                borderSide: Divider.createBorderSide(context)),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: Colors.grey,
+              ),
+            ),
+            filled: true,
+            contentPadding: const EdgeInsets.all(8),
+          ),
+        ),
       ],
     ));
   }

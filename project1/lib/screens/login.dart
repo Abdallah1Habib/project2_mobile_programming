@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -11,7 +13,7 @@ class loginpage extends StatelessWidget {
     return Scaffold(
         body: Padding(
       padding: const EdgeInsets.all(30.0),
-      child: Column(children: const [
+      child: Column(children: [
         SizedBox(
           height: 64,
         ),
@@ -26,6 +28,12 @@ class loginpage extends StatelessWidget {
             pass: true,
             text: "Enter Password : ",
             inputtype: TextInputType.text),
+        SizedBox(
+          height: 30,
+        ),
+        ElevatedButton(
+            onPressed: () {},
+            child: Text("Login", style: TextStyle(fontSize: 20)))
       ]),
     ));
   }

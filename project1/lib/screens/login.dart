@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:project1/constants.dart';
 import 'package:project1/widgets/mytextfield.dart';
 
 class loginpage extends StatelessWidget {
@@ -35,7 +36,7 @@ class loginpage extends StatelessWidget {
           onPressed: () {},
           child: Text("Login", style: TextStyle(fontSize: 20)),
           style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.green),
+              backgroundColor: MaterialStateProperty.all(mainbuttoncolor),
               padding: MaterialStateProperty.all(EdgeInsets.all(12)),
               shape: MaterialStateProperty.all(RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8)))),

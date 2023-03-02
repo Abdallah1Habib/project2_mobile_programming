@@ -16,6 +16,25 @@ class loginpage extends StatelessWidget {
             height: 64,
           ),
           TextField(
+            keyboardType: TextInputType.emailAddress,
+            obscureText: false,
+            decoration: InputDecoration(
+              hintText: "Enter your email : ",
+              enabledBorder: OutlineInputBorder(
+                  borderSide: Divider.createBorderSide(context)),
+              focusedBorder: const OutlineInputBorder(
+                borderSide: BorderSide(
+                  color: Colors.grey,
+                ),
+              ),
+              filled: true,
+              contentPadding: const EdgeInsets.all(8),
+            ),
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          TextField(
             keyboardType: TextInputType.text,
             obscureText: true,
             decoration: InputDecoration(

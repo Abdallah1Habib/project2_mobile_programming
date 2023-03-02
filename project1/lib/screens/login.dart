@@ -10,6 +10,9 @@ class loginpage extends StatelessWidget {
     return Scaffold(
         body: Column(
       children: [
+        SizedBox(
+          height: 64,
+        ),
         TextField(
           keyboardType: TextInputType.text,
           obscureText: true,
@@ -17,7 +20,7 @@ class loginpage extends StatelessWidget {
             hintText: "Enter password : ",
             enabledBorder: OutlineInputBorder(
                 borderSide: Divider.createBorderSide(context)),
-            focusedBorder: OutlineInputBorder(
+            focusedBorder: const OutlineInputBorder(
               borderSide: BorderSide(
                 color: Colors.grey,
               ),

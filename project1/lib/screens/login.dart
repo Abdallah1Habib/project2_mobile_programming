@@ -9,7 +9,13 @@ class loginpage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(
-      children: [Text("Login page")],
+      children: const [
+        TextField(
+          keyboardType: TextInputType.text,
+          obscureText: true,
+          decoration: InputDecoration(),
+        )
+      ],
     ));
   }
 }

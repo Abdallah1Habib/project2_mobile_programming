@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:project1/widgets/mytextfield.dart';
 
 class loginpage extends StatelessWidget {
   const loginpage({super.key});
@@ -10,48 +11,22 @@ class loginpage extends StatelessWidget {
     return Scaffold(
         body: Padding(
       padding: const EdgeInsets.all(30.0),
-      child: Column(
-        children: [
-          const SizedBox(
-            height: 64,
-          ),
-          TextField(
-            keyboardType: TextInputType.emailAddress,
-            obscureText: false,
-            decoration: InputDecoration(
-              hintText: "Enter your email : ",
-              enabledBorder: OutlineInputBorder(
-                  borderSide: Divider.createBorderSide(context)),
-              focusedBorder: const OutlineInputBorder(
-                borderSide: BorderSide(
-                  color: Colors.grey,
-                ),
-              ),
-              filled: true,
-              contentPadding: const EdgeInsets.all(8),
-            ),
-          ),
-          const SizedBox(
-            height: 30,
-          ),
-          TextField(
-            keyboardType: TextInputType.text,
-            obscureText: true,
-            decoration: InputDecoration(
-              hintText: "Enter password : ",
-              enabledBorder: OutlineInputBorder(
-                  borderSide: Divider.createBorderSide(context)),
-              focusedBorder: const OutlineInputBorder(
-                borderSide: BorderSide(
-                  color: Colors.grey,
-                ),
-              ),
-              filled: true,
-              contentPadding: const EdgeInsets.all(8),
-            ),
-          ),
-        ],
-      ),
+      child: Column(children: const [
+        SizedBox(
+          height: 64,
+        ),
+        CustomTextField(
+            pass: false,
+            text: "Enter Email : ",
+            inputtype: TextInputType.emailAddress),
+        SizedBox(
+          height: 30,
+        ),
+        CustomTextField(
+            pass: true,
+            text: "Enter Password : ",
+            inputtype: TextInputType.text),
+      ]),
     ));
   }
 }

@@ -8,28 +8,31 @@ class loginpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [
-        SizedBox(
-          height: 64,
-        ),
-        TextField(
-          keyboardType: TextInputType.text,
-          obscureText: true,
-          decoration: InputDecoration(
-            hintText: "Enter password : ",
-            enabledBorder: OutlineInputBorder(
-                borderSide: Divider.createBorderSide(context)),
-            focusedBorder: const OutlineInputBorder(
-              borderSide: BorderSide(
-                color: Colors.grey,
-              ),
-            ),
-            filled: true,
-            contentPadding: const EdgeInsets.all(8),
+        body: Padding(
+      padding: const EdgeInsets.all(30.0),
+      child: Column(
+        children: [
+          const SizedBox(
+            height: 64,
           ),
-        ),
-      ],
+          TextField(
+            keyboardType: TextInputType.text,
+            obscureText: true,
+            decoration: InputDecoration(
+              hintText: "Enter password : ",
+              enabledBorder: OutlineInputBorder(
+                  borderSide: Divider.createBorderSide(context)),
+              focusedBorder: const OutlineInputBorder(
+                borderSide: BorderSide(
+                  color: Colors.grey,
+                ),
+              ),
+              filled: true,
+              contentPadding: const EdgeInsets.all(8),
+            ),
+          ),
+        ],
+      ),
     ));
   }
 }

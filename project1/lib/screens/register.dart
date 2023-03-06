@@ -16,7 +16,7 @@ class registerpage extends StatelessWidget {
         backgroundColor: Colors.grey[150],
         body: Padding(
           padding: const EdgeInsets.all(30.0),
-          child: Expanded(
+          child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

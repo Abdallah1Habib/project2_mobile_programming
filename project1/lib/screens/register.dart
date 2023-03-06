@@ -21,26 +21,29 @@ class registerpage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                SizedBox(
+                  height: 45,
+                ),
                 CustomTextField(
                     pass: false,
                     text: "Enter your username : ",
                     inputtype: TextInputType.text),
                 SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 CustomTextField(
                     pass: false,
                     text: "Enter Email : ",
                     inputtype: TextInputType.emailAddress),
                 SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 CustomTextField(
                     pass: true,
                     text: "Enter Password : ",
                     inputtype: TextInputType.text),
                 SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 ElevatedButton(
                   onPressed: () {},
@@ -52,9 +55,9 @@ class registerpage extends StatelessWidget {
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8)))),
                 ),
-                // SizedBox(
-                //   height: 15,
-                // ),
+                SizedBox(
+                  height: 15,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -62,7 +65,7 @@ class registerpage extends StatelessWidget {
                         style: TextStyle(color: Colors.black, fontSize: 20)),
                     TextButton(
                       onPressed: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                                 builder: ((context) => const loginpage())));

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:project1/constants.dart';
+import 'package:project1/screens/register.dart';
 import 'package:project1/widgets/mytextfield.dart';
 
 class loginpage extends StatelessWidget {
@@ -53,7 +54,12 @@ class loginpage extends StatelessWidget {
                     Text("Don't have an account?",
                         style: TextStyle(color: Colors.black, fontSize: 20)),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: ((context) => const registerpage())));
+                      },
                       child: Text(
                         "Sign Up",
                         style: TextStyle(color: Colors.black, fontSize: 20),

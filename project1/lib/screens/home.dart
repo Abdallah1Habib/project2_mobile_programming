@@ -19,9 +19,12 @@ class homepage extends StatelessWidget {
                 onPressed: () {},
                 icon: Icon(Icons.add_shopping_cart),
               ),
-              Text(
-                "8",
-                style: TextStyle(color: Colors.black),
+              Padding(
+                padding: const EdgeInsets.only(right: 12),
+                child: Text(
+                  "\$ 15",
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
             ],
           ),

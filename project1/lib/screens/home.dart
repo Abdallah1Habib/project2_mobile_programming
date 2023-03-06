@@ -37,6 +37,11 @@ class homepage extends StatelessWidget {
               leading: Icon(Icons.add_shopping_cart),
               onTap: () {},
             ),
+            ListTile(
+              title: Text("About"),
+              leading: Icon(Icons.help_center),
+              onTap: () {},
+            ),
           ],
         ),
       ),

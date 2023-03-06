@@ -97,29 +97,34 @@ class homepage extends StatelessWidget {
           ),
         ],
       ),
-      body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          childAspectRatio: 3 / 2,
-          crossAxisSpacing: 15,
-          mainAxisSpacing: 35,
+      body: Padding(
+        padding: const EdgeInsets.only(top: 25),
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 3 / 2,
+            crossAxisSpacing: 15,
+            mainAxisSpacing: 35,
+          ),
+          itemCount: 4,
+          itemBuilder: (BuildContext context, int index) {
+            return GridTile(
+              child: Stack(
+                children: [
+                  Positioned(
+                    top: -2,
+                    bottom: -9,
+                    right: 0,
+                    left: 0,
+                    child: ClipRRect(
+                        borderRadius: BorderRadius.circular(50),
+                        child: Image.asset('assets/images/62.jpg')),
+                  ),
+                ],
+              ),
+            );
+          },
         ),
-        itemCount: 4,
-        itemBuilder: (BuildContext context, int index) {
-          return GridTile(
-            child: Stack(
-              children: [
-                Positioned(
-                  right: 0,
-                  left: 0,
-                  child: ClipRRect(
-                      borderRadius: BorderRadius.circular(55),
-                      child: Image.asset('assets/images/62.jpg')),
-                ),
-              ],
-            ),
-          );
-        },
       ),
     );
   }

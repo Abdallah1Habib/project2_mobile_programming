@@ -13,6 +13,10 @@ class homepage extends StatelessWidget {
         child: Column(
           children: [
             UserAccountsDrawerHeader(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("assets/images/94.jpg"),
+                      fit: BoxFit.cover)),
               accountName: Text(
                 "Abdallah Habib",
                 style: TextStyle(color: Colors.white),
@@ -20,7 +24,7 @@ class homepage extends StatelessWidget {
               accountEmail: Text("abdallahhabib55@gmail.com"),
               currentAccountPicture: CircleAvatar(
                 radius: 55,
-                backgroundImage: AssetImage("assets/images/94.jpg"),
+                backgroundImage: AssetImage("assets/images/62.jpg"),
               ),
             )
           ],

@@ -22,17 +22,24 @@ class registerpage extends StatelessWidget {
               children: [
                 CustomTextField(
                     pass: false,
+                    text: "Enter your username : ",
+                    inputtype: TextInputType.text),
+                SizedBox(
+                  height: 20,
+                ),
+                CustomTextField(
+                    pass: false,
                     text: "Enter Email : ",
                     inputtype: TextInputType.emailAddress),
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 CustomTextField(
                     pass: true,
                     text: "Enter Password : ",
                     inputtype: TextInputType.text),
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 ElevatedButton(
                   onPressed: () {},
@@ -44,9 +51,9 @@ class registerpage extends StatelessWidget {
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8)))),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+                // SizedBox(
+                //   height: 15,
+                // ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

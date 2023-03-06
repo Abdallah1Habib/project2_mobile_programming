@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:project1/constants.dart';
 
 class homepage extends StatelessWidget {
   const homepage({super.key});
@@ -9,12 +10,17 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 76, 141, 95),
+        backgroundColor: appbarcolor,
         title: Text("Home"),
         actions: [
           Row(
-            children: [Stack()],
-          )
+            children: [
+              Text(
+                "8",
+                style: TextStyle(color: Colors.black),
+              ),
+            ],
+          ),
         ],
       ),
     );

@@ -9,7 +9,13 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("data"),
+        backgroundColor: Color.fromARGB(255, 76, 141, 95),
+        title: Text("Home"),
+        actions: [
+          Row(
+            children: [Stack()],
+          )
+        ],
       ),
     );
   }

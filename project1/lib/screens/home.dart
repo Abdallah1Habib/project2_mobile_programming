@@ -42,6 +42,11 @@ class homepage extends StatelessWidget {
               leading: Icon(Icons.help_center),
               onTap: () {},
             ),
+            ListTile(
+              title: Text("Logout"),
+              leading: Icon(Icons.exit_to_app),
+              onTap: () {},
+            ),
           ],
         ),
       ),

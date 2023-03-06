@@ -46,13 +46,15 @@ class loginpage extends StatelessWidget {
               height: 30,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Don't have an account"),
+                Text("Don't have an account",
+                    style: TextStyle(color: Colors.black, fontSize: 20)),
                 TextButton(
                     onPressed: () {},
                     child: Text(
                       "Sign Up",
-                      style: TextStyle(color: Colors.black),
+                      style: TextStyle(color: Colors.black, fontSize: 20),
                     )),
               ],
             ),

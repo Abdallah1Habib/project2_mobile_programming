@@ -131,6 +131,8 @@ class homepage extends StatelessWidget {
                     onPressed: () {},
                     icon: Icon(Icons.add),
                   ),
+                  leading: Text("\$14"),
+                  title: Text(""),
                 ),
               ),
             );

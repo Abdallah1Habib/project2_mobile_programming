@@ -24,7 +24,7 @@ class homepage extends StatelessWidget {
                         shape: BoxShape.circle),
                     child: const Text(
                       "8",
-                      style: TextStyle(color: Colors.black),
+                      style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
                   ),
                   IconButton(

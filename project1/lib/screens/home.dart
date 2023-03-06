@@ -11,42 +11,51 @@ class homepage extends StatelessWidget {
     return Scaffold(
       drawer: Drawer(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            UserAccountsDrawerHeader(
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/images/94.jpg"),
-                      fit: BoxFit.cover)),
-              accountName: Text(
-                "Abdallah Habib",
-                style: TextStyle(color: Colors.white),
-              ),
-              accountEmail: Text("abdallahhabib55@gmail.com"),
-              currentAccountPicture: CircleAvatar(
-                radius: 55,
-                backgroundImage: AssetImage("assets/images/62.jpg"),
-              ),
+            Column(
+              children: [
+                UserAccountsDrawerHeader(
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/images/94.jpg"),
+                          fit: BoxFit.cover)),
+                  accountName: Text(
+                    "Abdallah Habib",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  accountEmail: Text("abdallahhabib55@gmail.com"),
+                  currentAccountPicture: CircleAvatar(
+                    radius: 55,
+                    backgroundImage: AssetImage("assets/images/62.jpg"),
+                  ),
+                ),
+                ListTile(
+                  title: Text("Home"),
+                  leading: Icon(Icons.home),
+                  onTap: () {},
+                ),
+                ListTile(
+                  title: Text("My products"),
+                  leading: Icon(Icons.add_shopping_cart),
+                  onTap: () {},
+                ),
+                ListTile(
+                  title: Text("About"),
+                  leading: Icon(Icons.help_center),
+                  onTap: () {},
+                ),
+                ListTile(
+                  title: Text("Logout"),
+                  leading: Icon(Icons.exit_to_app),
+                  onTap: () {},
+                ),
+              ],
             ),
-            ListTile(
-              title: Text("Home"),
-              leading: Icon(Icons.home),
-              onTap: () {},
-            ),
-            ListTile(
-              title: Text("My products"),
-              leading: Icon(Icons.add_shopping_cart),
-              onTap: () {},
-            ),
-            ListTile(
-              title: Text("About"),
-              leading: Icon(Icons.help_center),
-              onTap: () {},
-            ),
-            ListTile(
-              title: Text("Logout"),
-              leading: Icon(Icons.exit_to_app),
-              onTap: () {},
-            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: Text("Developed by Abdallah Habib @ 2023"),
+            )
           ],
         ),
       ),

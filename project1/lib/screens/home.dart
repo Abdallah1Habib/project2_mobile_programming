@@ -97,6 +97,9 @@ class homepage extends StatelessWidget {
           ),
         ],
       ),
+      body: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(),
+          itemBuilder: itemBuilder),
     );
   }
 }

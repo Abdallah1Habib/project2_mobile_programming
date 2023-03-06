@@ -106,7 +106,9 @@ class homepage extends StatelessWidget {
         ),
         itemCount: 4,
         itemBuilder: (BuildContext context, int index) {
-          return Container();
+          return GridTile(
+            child: Image.asset('assets/images/62.jpg'),
+          );
         },
       ),
     );

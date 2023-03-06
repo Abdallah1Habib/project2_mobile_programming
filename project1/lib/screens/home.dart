@@ -10,14 +10,21 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-        child: Column(children: [
-          UserAccountsDrawerHeader(
+        child: Column(
+          children: [
+            UserAccountsDrawerHeader(
               accountName: Text(
                 "Abdallah Habib",
                 style: TextStyle(color: Colors.white),
               ),
-              accountEmail: Text("abdallahhabib55@gmail.com"))
-        ]),
+              accountEmail: Text("abdallahhabib55@gmail.com"),
+              currentAccountPicture: CircleAvatar(
+                radius: 55,
+                backgroundImage: AssetImage("assets/images/94.jpg"),
+              ),
+            )
+          ],
+        ),
       ),
       appBar: AppBar(
         backgroundColor: appbarcolor,

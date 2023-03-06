@@ -124,6 +124,10 @@ class homepage extends StatelessWidget {
                     ),
                   ],
                 ),
+                footer:GridTileBar(
+                  backgroundColor: Color.fromARGB(66, 73, 127, 110),
+                  trailing: ,
+                  ),
               ),
             );
           },

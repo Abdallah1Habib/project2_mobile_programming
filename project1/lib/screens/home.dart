@@ -17,14 +17,17 @@ class homepage extends StatelessWidget {
             children: [
               Stack(
                 children: [
-                  Container(
-                    padding: const EdgeInsets.all(5),
-                    decoration: const BoxDecoration(
-                        color: Color.fromARGB(211, 164, 255, 193),
-                        shape: BoxShape.circle),
-                    child: const Text(
-                      "8",
-                      style: TextStyle(fontSize: 16, color: Colors.black),
+                  Positioned(
+                    bottom: 24,
+                    child: Container(
+                      padding: const EdgeInsets.all(5),
+                      decoration: const BoxDecoration(
+                          color: Color.fromARGB(211, 164, 255, 193),
+                          shape: BoxShape.circle),
+                      child: const Text(
+                        "8",
+                        style: TextStyle(fontSize: 16, color: Colors.black),
+                      ),
                     ),
                   ),
                   IconButton(

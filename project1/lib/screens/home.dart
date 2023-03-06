@@ -9,7 +9,16 @@ class homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: Column(children: [
+          UserAccountsDrawerHeader(
+              accountName: Text(
+                "Abdallah Habib",
+                style: TextStyle(color: Colors.white),
+              ),
+              accountEmail: Text("abdallahhabib55@gmail.com"))
+        ]),
+      ),
       appBar: AppBar(
         backgroundColor: appbarcolor,
         title: const Text("Home"),

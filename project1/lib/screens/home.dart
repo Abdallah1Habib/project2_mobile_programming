@@ -124,10 +124,14 @@ class homepage extends StatelessWidget {
                     ),
                   ],
                 ),
-                footer:GridTileBar(
+                footer: GridTileBar(
                   backgroundColor: Color.fromARGB(66, 73, 127, 110),
-                  trailing: ,
+                  trailing: IconButton(
+                    color: Color.fromARGB(255, 62, 94, 70),
+                    onPressed: () {},
+                    icon: Icon(Icons.add),
                   ),
+                ),
               ),
             );
           },

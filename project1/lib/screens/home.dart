@@ -11,21 +11,27 @@ class homepage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: appbarcolor,
-        title: Text("Home"),
+        title: const Text("Home"),
         actions: [
           Row(
             children: [
               Stack(
                 children: [
-                  Text("8"),
+                  Container(
+                    padding: const EdgeInsets.all(5),
+                    decoration: const BoxDecoration(
+                        color: Color.fromARGB(211, 164, 255, 193),
+                        shape: BoxShape.circle),
+                    child: const Text("8"),
+                  ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.add_shopping_cart),
+                    icon: const Icon(Icons.add_shopping_cart),
                   ),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(right: 12),
+              const Padding(
+                padding: EdgeInsets.only(right: 12),
                 child: Text(
                   "\$ 15",
                   style: TextStyle(color: Colors.black),

@@ -15,6 +15,10 @@ class homepage extends StatelessWidget {
         actions: [
           Row(
             children: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.add_shopping_cart),
+              ),
               Text(
                 "8",
                 style: TextStyle(color: Colors.black),

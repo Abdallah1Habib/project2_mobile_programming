@@ -98,13 +98,17 @@ class homepage extends StatelessWidget {
         ],
       ),
       body: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            childAspectRatio: 3 / 2,
-            crossAxisSpacing: 15,
-            mainAxisSpacing: 35,
-          ),
-          itemBuilder: itemBuilder),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          childAspectRatio: 3 / 2,
+          crossAxisSpacing: 15,
+          mainAxisSpacing: 35,
+        ),
+        itemCount: 4,
+        itemBuilder: (BuildContext context, int index) {
+          return Container();
+        },
+      ),
     );
   }
 }

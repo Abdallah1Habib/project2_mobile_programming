@@ -43,7 +43,7 @@ class registerpage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text("Login", style: TextStyle(fontSize: 20)),
+                  child: Text("Register", style: TextStyle(fontSize: 20)),
                   style: ButtonStyle(
                       backgroundColor:
                           MaterialStateProperty.all(mainbuttoncolor),
@@ -57,12 +57,12 @@ class registerpage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Don't have an account?",
+                    Text("Have an account?",
                         style: TextStyle(color: Colors.black, fontSize: 20)),
                     TextButton(
                       onPressed: () {},
                       child: Text(
-                        "Sign Up",
+                        "Login",
                         style: TextStyle(color: Colors.black, fontSize: 20),
                       ),
                     ),

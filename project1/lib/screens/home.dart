@@ -26,7 +26,12 @@ class homepage extends StatelessWidget {
                 radius: 55,
                 backgroundImage: AssetImage("assets/images/62.jpg"),
               ),
-            )
+            ),
+            ListTile(
+              title: Text("Home"),
+              leading: Icon(Icons.home),
+              onTap: () {},
+            ),
           ],
         ),
       ),

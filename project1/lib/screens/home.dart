@@ -108,19 +108,22 @@ class homepage extends StatelessWidget {
           ),
           itemCount: 4,
           itemBuilder: (BuildContext context, int index) {
-            return GridTile(
-              child: Stack(
-                children: [
-                  Positioned(
-                    top: -2,
-                    bottom: -9,
-                    right: 0,
-                    left: 0,
-                    child: ClipRRect(
-                        borderRadius: BorderRadius.circular(50),
-                        child: Image.asset('assets/images/62.jpg')),
-                  ),
-                ],
+            return GestureDetector(
+              onTap: () {},
+              child: GridTile(
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: -2,
+                      bottom: -9,
+                      right: 0,
+                      left: 0,
+                      child: ClipRRect(
+                          borderRadius: BorderRadius.circular(50),
+                          child: Image.asset('assets/images/62.jpg')),
+                    ),
+                  ],
+                ),
               ),
             );
           },

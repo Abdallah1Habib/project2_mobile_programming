@@ -15,6 +15,7 @@ class loginpage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(30.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
               height: 64,
@@ -48,7 +49,7 @@ class loginpage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Don't have an account",
+                Text("Don't have an account?",
                     style: TextStyle(color: Colors.black, fontSize: 20)),
                 TextButton(
                     onPressed: () {},

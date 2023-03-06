@@ -22,7 +22,10 @@ class homepage extends StatelessWidget {
                     decoration: const BoxDecoration(
                         color: Color.fromARGB(211, 164, 255, 193),
                         shape: BoxShape.circle),
-                    child: const Text("8"),
+                    child: const Text(
+                      "8",
+                      style: TextStyle(color: Colors.black),
+                    ),
                   ),
                   IconButton(
                     onPressed: () {},

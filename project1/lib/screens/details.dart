@@ -62,7 +62,7 @@ class _DetailsState extends State<Details> {
         child: Column(
           children: [
             Image.asset(
-              'assets/images/62.jpg',
+              widget.prod.imgpath,
               height: 300,
             ),
             SizedBox(

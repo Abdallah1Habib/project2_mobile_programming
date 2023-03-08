@@ -3,6 +3,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:project1/constants.dart';
 
+class item {}
+
 class homepage extends StatelessWidget {
   List itms = [item()];
 

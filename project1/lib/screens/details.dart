@@ -5,7 +5,9 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import '../constants.dart';
 
 class Details extends StatelessWidget {
-  const Details({super.key});
+  Details({super.key});
+
+  bool ismore = true;
 
   @override
   Widget build(BuildContext context) {
@@ -146,7 +148,12 @@ class Details extends StatelessWidget {
               maxLines: 3,
               overflow: TextOverflow.fade,
             ),
-            TextButton(onPressed: () {}, child: Text("Show more")),
+            TextButton(
+                onPressed: () {},
+                child: Text(
+                  "Show more",
+                  style: TextStyle(fontSize: 18),
+                )),
           ],
         ),
       ),

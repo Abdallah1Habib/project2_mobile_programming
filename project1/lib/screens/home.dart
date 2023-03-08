@@ -4,7 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:project1/constants.dart';
 
 class homepage extends StatelessWidget {
-  const homepage({super.key});
+  List itms = [item()];
 
   @override
   Widget build(BuildContext context) {

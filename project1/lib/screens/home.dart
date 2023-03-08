@@ -3,7 +3,11 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:project1/constants.dart';
 
-class item {}
+class item {
+  String imgpath;
+  double price;
+  item({required this.imgpath, required this.price});
+}
 
 class homepage extends StatelessWidget {
   List itms = [item()];

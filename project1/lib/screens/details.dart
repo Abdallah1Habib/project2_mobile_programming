@@ -135,7 +135,12 @@ class Details extends StatelessWidget {
               style: TextStyle(fontSize: 22),
               textAlign: TextAlign.start,
             ),
-          )
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          Text(
+              "a;ldkfja;ldkjf;alkdjf;alkjfl;kadsjflkjalkdjfklsjafl;akdsjf;lkajdfl;akjdlfkaj;dlkfja;lkdfjlakdfj;ladjflakdjf;alkjfladjsflkadjflk")
         ],
       ),
     );

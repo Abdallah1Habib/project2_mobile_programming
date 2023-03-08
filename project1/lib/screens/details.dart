@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:project1/model/items.dart';
 
 import '../constants.dart';
 
 class Details extends StatefulWidget {
-  Details({super.key});
+  Details({required this.prod});
+
+  item prod;
 
   @override
   State<Details> createState() => _DetailsState();
@@ -154,15 +157,16 @@ class _DetailsState extends State<Details> {
               overflow: TextOverflow.fade,
             ),
             TextButton(
-                onPressed: () {
-                  setState(() {
-                    ismore = !ismore;
-                  });
-                },
-                child: Text(
-                  ismore ? "Show more" : "Show less",
-                  style: TextStyle(fontSize: 18),
-                )),
+              onPressed: () {
+                setState(() {
+                  ismore = !ismore;
+                });
+              },
+              child: Text(
+                ismore ? "Show more" : "Show less",
+                style: TextStyle(fontSize: 18),
+              ),
+            ),
           ],
         ),
       ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:project1/constants.dart';
+import 'package:project1/screens/details.dart';
 
 import '../model/items.dart';
 
@@ -110,7 +111,12 @@ class homepage extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             double x = items[index].price;
             return GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Details(prod: items[index])));
+              },
               child: GridTile(
                 child: Stack(
                   children: [

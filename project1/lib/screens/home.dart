@@ -3,21 +3,9 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:project1/constants.dart';
 
-class item {
-  String imgpath;
-  double price;
-  item({required this.imgpath, required this.price});
-}
+import '../model/items.dart';
 
 class homepage extends StatelessWidget {
-  List<item> items = [
-    item(imgpath: "lec2_project/project1/assets/images/1.jpg", price: 12.99),
-    item(imgpath: "lec2_project/project1/assets/images/2.jpg", price: 15.99),
-    item(imgpath: "lec2_project/project1/assets/images/3.jpg", price: 13.99),
-    item(imgpath: "lec2_project/project1/assets/images/4.jpg", price: 21.99),
-    item(imgpath: "lec2_project/project1/assets/images/5.jpg", price: 9.99),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -132,7 +120,7 @@ class homepage extends StatelessWidget {
                       left: 0,
                       child: ClipRRect(
                           borderRadius: BorderRadius.circular(50),
-                          child: Image.asset('assets/images/62.jpg')),
+                          child: Image.asset(items[index].imgpath)),
                     ),
                   ],
                 ),
@@ -143,7 +131,7 @@ class homepage extends StatelessWidget {
                     onPressed: () {},
                     icon: Icon(Icons.add),
                   ),
-                  leading: Text("\$14"),
+                  leading: Text("\$"),
                   title: Text(""),
                 ),
               ),

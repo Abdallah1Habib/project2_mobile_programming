@@ -103,6 +103,9 @@ class Details extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(
+                width: 77,
+              ),
               Row(
                 children: [
                   Icon(

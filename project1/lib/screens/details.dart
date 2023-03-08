@@ -50,7 +50,10 @@ class Details extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Image.asset('assets/images/62.jpg'),
+          Image.asset(
+            'assets/images/62.jpg',
+            height: 300,
+          ),
           SizedBox(
             height: 11,
           ),
@@ -70,6 +73,35 @@ class Details extends StatelessWidget {
                   color: Colors.redAccent,
                   borderRadius: BorderRadius.circular(4),
                 ),
+              ),
+              Row(
+                children: [
+                  Icon(
+                    Icons.star,
+                    size: 23,
+                    color: Colors.yellow,
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 23,
+                    color: Colors.yellow,
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 23,
+                    color: Colors.yellow,
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 23,
+                    color: Colors.yellow,
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 23,
+                    color: Colors.yellow,
+                  ),
+                ],
               )
             ],
           )

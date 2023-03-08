@@ -55,6 +55,24 @@ class Details extends StatelessWidget {
             height: 11,
           ),
           Text("\$12.99"),
+          SizedBox(
+            height: 16,
+          ),
+          Row(
+            children: [
+              Container(
+                padding: EdgeInsets.all(5),
+                child: Text(
+                  "New",
+                  style: TextStyle(fontSize: 12),
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.redAccent,
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              )
+            ],
+          )
         ],
       ),
     );

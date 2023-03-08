@@ -12,7 +12,7 @@ class Details extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: appbarcolor,
-        title: const Text("Home"),
+        title: const Text("Details Page"),
         actions: [
           Row(
             children: [
@@ -46,6 +46,15 @@ class Details extends StatelessWidget {
               ),
             ],
           ),
+        ],
+      ),
+      body: Column(
+        children: [
+          Image.asset('assets/images/62.jpg'),
+          SizedBox(
+            height: 11,
+          ),
+          Text("\$12.99"),
         ],
       ),
     );

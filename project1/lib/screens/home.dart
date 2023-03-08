@@ -10,7 +10,11 @@ class item {
 }
 
 class homepage extends StatelessWidget {
-  List itms = [item()];
+  List itms = [
+    item(imgpath: "", price: 12.99),
+    item(imgpath: "", price: 12.99),
+    item(imgpath: "", price: 12.99),
+  ];
 
   @override
   Widget build(BuildContext context) {

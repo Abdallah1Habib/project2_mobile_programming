@@ -155,7 +155,9 @@ class _DetailsState extends State<Details> {
             ),
             TextButton(
                 onPressed: () {
-                  ismore = false;
+                  setState(() {
+                    ismore = false;
+                  });
                 },
                 child: Text(
                   "Show more",

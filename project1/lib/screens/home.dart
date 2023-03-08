@@ -108,6 +108,7 @@ class homepage extends StatelessWidget {
           ),
           itemCount: items.length,
           itemBuilder: (BuildContext context, int index) {
+            double x = items[index].price;
             return GestureDetector(
               onTap: () {},
               child: GridTile(
@@ -131,7 +132,7 @@ class homepage extends StatelessWidget {
                     onPressed: () {},
                     icon: Icon(Icons.add),
                   ),
-                  leading: Text("\$"),
+                  leading: Text("\$ $x"),
                   title: Text(""),
                 ),
               ),

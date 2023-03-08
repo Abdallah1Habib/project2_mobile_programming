@@ -4,9 +4,14 @@ import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../constants.dart';
 
-class Details extends StatelessWidget {
+class Details extends StatefulWidget {
   Details({super.key});
 
+  @override
+  State<Details> createState() => _DetailsState();
+}
+
+class _DetailsState extends State<Details> {
   bool ismore = true;
 
   @override
@@ -145,11 +150,13 @@ class Details extends StatelessWidget {
             Text(
               "a;ldkfja;ldkjf;alkdjf;alkjfl;kadsjflkjalkdjfklsjafl;akdsjf;lkajdfl;akjdlfkaj;dlkfja;lkdfjlakdfj;ladjflakdjf;alkjfladjsflkadjflk",
               style: TextStyle(fontSize: 18),
-              maxLines: 3,
+              maxLines: ismore ? 3 : null,
               overflow: TextOverflow.fade,
             ),
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  ismore = false;
+                },
                 child: Text(
                   "Show more",
                   style: TextStyle(fontSize: 18),

@@ -62,6 +62,7 @@ class Details extends StatelessWidget {
             height: 16,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
                 padding: EdgeInsets.all(5),

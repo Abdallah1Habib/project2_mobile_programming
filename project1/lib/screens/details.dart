@@ -124,6 +124,14 @@ class Details extends StatelessWidget {
                 ],
               ),
             ],
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          Text(
+            "Details: ",
+            style: TextStyle(fontSize: 22),
+            textAlign: TextAlign.start,
           )
         ],
       ),

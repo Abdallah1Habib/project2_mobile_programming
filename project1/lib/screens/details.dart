@@ -48,100 +48,102 @@ class Details extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Image.asset(
-            'assets/images/62.jpg',
-            height: 300,
-          ),
-          SizedBox(
-            height: 11,
-          ),
-          Text("\$12.99"),
-          SizedBox(
-            height: 16,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Container(
-                padding: EdgeInsets.all(5),
-                child: Text(
-                  "New",
-                  style: TextStyle(fontSize: 12),
-                ),
-                decoration: BoxDecoration(
-                  color: Colors.redAccent,
-                  borderRadius: BorderRadius.circular(4),
-                ),
-              ),
-              Row(
-                children: [
-                  Icon(
-                    Icons.star,
-                    size: 23,
-                    color: Colors.yellow,
-                  ),
-                  Icon(
-                    Icons.star,
-                    size: 23,
-                    color: Colors.yellow,
-                  ),
-                  Icon(
-                    Icons.star,
-                    size: 23,
-                    color: Colors.yellow,
-                  ),
-                  Icon(
-                    Icons.star,
-                    size: 23,
-                    color: Colors.yellow,
-                  ),
-                  Icon(
-                    Icons.star,
-                    size: 23,
-                    color: Colors.yellow,
-                  ),
-                ],
-              ),
-              SizedBox(
-                width: 77,
-              ),
-              Row(
-                children: [
-                  Icon(
-                    Icons.edit_location,
-                    size: 23,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 3,
-                  ),
-                  Text(
-                    "Flower Shop",
-                    style: TextStyle(fontSize: 14),
-                  )
-                ],
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 16,
-          ),
-          SizedBox(
-            width: MediaQuery.of(context).size.width,
-            child: Text(
-              "Details: ",
-              style: TextStyle(fontSize: 22),
-              textAlign: TextAlign.start,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Image.asset(
+              'assets/images/62.jpg',
+              height: 300,
             ),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          Text(
-              "a;ldkfja;ldkjf;alkdjf;alkjfl;kadsjflkjalkdjfklsjafl;akdsjf;lkajdfl;akjdlfkaj;dlkfja;lkdfjlakdfj;ladjflakdjf;alkjfladjsflkadjflk")
-        ],
+            SizedBox(
+              height: 11,
+            ),
+            Text("\$12.99"),
+            SizedBox(
+              height: 16,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(5),
+                  child: Text(
+                    "New",
+                    style: TextStyle(fontSize: 12),
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.redAccent,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.star,
+                      size: 23,
+                      color: Colors.yellow,
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 23,
+                      color: Colors.yellow,
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 23,
+                      color: Colors.yellow,
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 23,
+                      color: Colors.yellow,
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 23,
+                      color: Colors.yellow,
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  width: 77,
+                ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.edit_location,
+                      size: 23,
+                      color: Colors.greenAccent,
+                    ),
+                    SizedBox(
+                      width: 3,
+                    ),
+                    Text(
+                      "Flower Shop",
+                      style: TextStyle(fontSize: 14),
+                    )
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              child: Text(
+                "Details: ",
+                style: TextStyle(fontSize: 22),
+                textAlign: TextAlign.start,
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Text(
+                "a;ldkfja;ldkjf;alkdjf;alkjfl;kadsjflkjalkdjfklsjafl;akdsjf;lkajdfl;akjdlfkaj;dlkfja;lkdfjlakdfj;ladjflakdjf;alkjfladjsflkadjflk"),
+          ],
+        ),
       ),
     );
   }

@@ -10,7 +10,7 @@ class item {
 }
 
 class homepage extends StatelessWidget {
-  List itms = [
+  List<item> items = [
     item(imgpath: "lec2_project/project1/assets/images/1.jpg", price: 12.99),
     item(imgpath: "lec2_project/project1/assets/images/2.jpg", price: 15.99),
     item(imgpath: "lec2_project/project1/assets/images/3.jpg", price: 13.99),
@@ -27,7 +27,7 @@ class homepage extends StatelessWidget {
           children: [
             Column(
               children: [
-                UserAccountsDrawerHeader(
+                const UserAccountsDrawerHeader(
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage("assets/images/94.jpg"),
@@ -112,13 +112,13 @@ class homepage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(top: 25),
         child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             childAspectRatio: 3 / 2,
             crossAxisSpacing: 15,
             mainAxisSpacing: 35,
           ),
-          itemCount: 4,
+          itemCount: items.length,
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {},

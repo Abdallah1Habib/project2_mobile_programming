@@ -141,7 +141,11 @@ class Details extends StatelessWidget {
               height: 15,
             ),
             Text(
-                "a;ldkfja;ldkjf;alkdjf;alkjfl;kadsjflkjalkdjfklsjafl;akdsjf;lkajdfl;akjdlfkaj;dlkfja;lkdfjlakdfj;ladjflakdjf;alkjfladjsflkadjflk"),
+              "a;ldkfja;ldkjf;alkdjf;alkjfl;kadsjflkjalkdjfklsjafl;akdsjf;lkajdfl;akjdlfkaj;dlkfja;lkdfjlakdfj;ladjflakdjf;alkjfladjsflkadjflk",
+              style: TextStyle(fontSize: 18),
+              maxLines: 3,
+              overflow: TextOverflow.fade,
+            ),
           ],
         ),
       ),

@@ -146,6 +146,7 @@ class Details extends StatelessWidget {
               maxLines: 3,
               overflow: TextOverflow.fade,
             ),
+            TextButton(onPressed: () {}, child: Text("Show more")),
           ],
         ),
       ),

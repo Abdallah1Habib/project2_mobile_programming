@@ -68,7 +68,7 @@ class _DetailsState extends State<Details> {
             SizedBox(
               height: 11,
             ),
-            Text("\$ $(widget.prod.price)"),
+            Text("\$ 15"),
             SizedBox(
               height: 16,
             ),

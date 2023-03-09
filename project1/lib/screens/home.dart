@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:project1/constants.dart';
 import 'package:project1/provider/cart.dart';
 import 'package:project1/screens/details.dart';
+import 'package:provider/provider.dart';
 
 import '../model/items.dart';
 
@@ -64,9 +65,9 @@ class homepage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: appbarcolor,
         title: Consumer<Cart>(
-          builder: ((context, classInstance, child){
-            return Text("$(classInstance.myname)");
-          })
+          builder: ((context, inst, child) {
+            return Text("${inst.locname}");
+          }),
         ),
         actions: [
           Row(

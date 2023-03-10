@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
 class Cart with ChangeNotifier {
-  String locname = "";
+  String locname = "Bebo Shop";
 }

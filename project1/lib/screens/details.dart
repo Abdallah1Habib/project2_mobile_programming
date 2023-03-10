@@ -22,7 +22,11 @@ class _DetailsState extends State<Details> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: appbarcolor,
-        title: const Text("Details Page"),
+        title: Consumer<Cart>(
+          builder:((context,inst,child){
+            return Text("${inst.locname}")
+          })
+        ),
         actions: [
           Row(
             children: [

@@ -11,6 +11,8 @@ import '../model/items.dart';
 class homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //not using the provider to avoid building the entire app
+    // final cartt = Provider.of<Cart>(context);
     return Scaffold(
       drawer: Drawer(
         child: Column(

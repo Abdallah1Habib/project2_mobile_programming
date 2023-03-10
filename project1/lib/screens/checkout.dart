@@ -36,7 +36,9 @@ class Checkout extends StatelessWidget {
                       ),
                       title: Text("Product ${index}"),
                       trailing: IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          cartt.removeitem(cartt.selectprod[index]);
+                        },
                         icon: Icon(Icons.remove),
                       ),
                     ),

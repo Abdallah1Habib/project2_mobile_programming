@@ -54,8 +54,8 @@ class Checkout extends StatelessWidget {
               style: TextStyle(fontSize: 19),
             ),
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(paybuttoncolor),
-            ),
+                backgroundColor: MaterialStateProperty.all(paybuttoncolor),
+                padding: MaterialStateProperty.all(EdgeInsets.all(12))),
           )
         ],
       ),

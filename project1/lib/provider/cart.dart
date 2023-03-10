@@ -8,6 +8,7 @@ class Cart with ChangeNotifier {
 
   additem(item product) {
     selectprod.add(product);
+    price += product.price;
     notifyListeners();
   }
 }

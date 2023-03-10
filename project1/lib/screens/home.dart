@@ -72,7 +72,9 @@ class homepage extends StatelessWidget {
         actions: [
           Row(
             children: [
-              Stack(
+              Consumer<Cart>(
+                builder:((context, newx,child){
+                  return Stack(
                 children: [
                   Positioned(
                     bottom: 24,
@@ -93,6 +95,9 @@ class homepage extends StatelessWidget {
                   ),
                 ],
               ),
+              
+                })
+              )
               const Padding(
                 padding: EdgeInsets.only(right: 12),
                 child: Text(

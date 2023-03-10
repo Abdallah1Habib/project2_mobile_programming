@@ -72,32 +72,29 @@ class homepage extends StatelessWidget {
         actions: [
           Row(
             children: [
-              Consumer<Cart>(
-                builder:((context, newx,child){
-                  return Stack(
-                children: [
-                  Positioned(
-                    bottom: 24,
-                    child: Container(
-                      padding: const EdgeInsets.all(5),
-                      decoration: const BoxDecoration(
-                          color: Color.fromARGB(211, 164, 255, 193),
-                          shape: BoxShape.circle),
-                      child: const Text(
-                        "8",
-                        style: TextStyle(fontSize: 16, color: Colors.black),
+              Consumer<Cart>(builder: ((context, newx, child) {
+                return Stack(
+                  children: [
+                    Positioned(
+                      bottom: 24,
+                      child: Container(
+                        padding: const EdgeInsets.all(5),
+                        decoration: const BoxDecoration(
+                            color: Color.fromARGB(211, 164, 255, 193),
+                            shape: BoxShape.circle),
+                        child: Text(
+                          "${newx.selectprod.length}",
+                          style: TextStyle(fontSize: 16, color: Colors.black),
+                        ),
                       ),
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.add_shopping_cart),
-                  ),
-                ],
-              ),
-              
-                })
-              )
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.add_shopping_cart),
+                    ),
+                  ],
+                );
+              })),
               const Padding(
                 padding: EdgeInsets.only(right: 12),
                 child: Text(

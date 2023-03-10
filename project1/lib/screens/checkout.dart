@@ -16,6 +16,9 @@ class Checkout extends StatelessWidget {
           CustApp(),
         ],
       ),
+      body: SizedBox(height: 300,
+      child: ,
+      ),
     );
   }
 }

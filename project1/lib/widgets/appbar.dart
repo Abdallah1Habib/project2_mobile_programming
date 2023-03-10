@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project1/screens/checkout.dart';
 import 'package:provider/provider.dart';
 
 class CustApp extends StatelessWidget {
@@ -25,7 +26,10 @@ class CustApp extends StatelessWidget {
                 ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Checkout()));
+                },
                 icon: const Icon(Icons.add_shopping_cart),
               ),
             ],

@@ -19,16 +19,18 @@ class Checkout extends StatelessWidget {
           CustApp(),
         ],
       ),
-      body: SizedBox(
-        height: 300,
-        child: ListView.builder(
-          itemBuilder: (BuildContext context, int index) {
-            return Card(child: ListTile(
-              subtitle: ,
-            ),);
-          },
-          padding: const EdgeInsets.all(8),
-          itemCount: cartt.selectprod.length,
+      body: SingleChildScrollView(
+        child: SizedBox(
+          height: 300,
+          child: ListView.builder(
+            itemBuilder: (BuildContext context, int index) {
+              return Card(child: ListTile(
+                subtitle: ,
+              ),);
+            },
+            padding: const EdgeInsets.all(8),
+            itemCount: cartt.selectprod.length,
+          ),
         ),
       ),
     );

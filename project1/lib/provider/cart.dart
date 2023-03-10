@@ -4,7 +4,8 @@ import 'package:project1/model/items.dart';
 class Cart with ChangeNotifier {
   List selectprod = [];
 
-  additem(item product){
+  additem(item product) {
     selectprod.add(product);
+    notifyListeners();
   }
 }

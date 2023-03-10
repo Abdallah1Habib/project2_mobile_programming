@@ -139,11 +139,17 @@ class homepage extends StatelessWidget {
                 ),
                 footer: GridTileBar(
                   backgroundColor: Color.fromARGB(66, 73, 127, 110),
-                  trailing: IconButton(
+                  trailing: Consumer<Cart>{
+                    builder:((context, inst,child){
+                      return IconButton(
                     color: Color.fromARGB(255, 62, 94, 70),
-                    onPressed: () {},
+                    onPressed: () {
+                      
+                    },
                     icon: Icon(Icons.add),
-                  ),
+                  );
+                    })
+                  },
                   leading: Text("\$ $x"),
                   title: Text(""),
                 ),

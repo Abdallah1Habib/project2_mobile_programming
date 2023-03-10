@@ -26,7 +26,7 @@ class Checkout extends StatelessWidget {
             itemBuilder: (BuildContext context, int index) {
               return Card(child: ListTile(
                 subtitle: ,
-                leading: CircleAvatar(backgroundImage: AssetImage(),),
+                leading: CircleAvatar(backgroundImage: AssetImage(cartt.selectprod[index].imgpath),),
                 title: ,
                 trailing: IconButton(onPressed: (){}, icon: Icon(Icons.remove),),
               ),);

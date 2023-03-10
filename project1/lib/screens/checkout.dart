@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project1/constants.dart';
 import 'package:project1/widgets/appbar.dart';
 import 'package:provider/provider.dart';
 
@@ -9,6 +10,7 @@ class Checkout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: appbarcolor,
         title: Text("Checkout"),
         actions: [
           CustApp(),

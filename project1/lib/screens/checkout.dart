@@ -3,11 +3,14 @@ import 'package:project1/constants.dart';
 import 'package:project1/widgets/appbar.dart';
 import 'package:provider/provider.dart';
 
+import '../provider/cart.dart';
+
 class Checkout extends StatelessWidget {
   const Checkout({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final cartt = Provider.of<Cart>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: appbarcolor,

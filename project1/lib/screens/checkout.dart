@@ -23,7 +23,7 @@ class Checkout extends StatelessWidget {
         children: [
           SingleChildScrollView(
             child: SizedBox(
-              height: 300,
+              height: 400,
               child: ListView.builder(
                 itemBuilder: (BuildContext context, int index) {
                   return Card(

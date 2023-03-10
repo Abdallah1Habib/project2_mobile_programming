@@ -24,12 +24,21 @@ class Checkout extends StatelessWidget {
           height: 300,
           child: ListView.builder(
             itemBuilder: (BuildContext context, int index) {
-              return Card(child: ListTile(
-                subtitle:Text("${cartt.selectprod[index].price} - ${}") ,
-                leading: CircleAvatar(backgroundImage: AssetImage(cartt.selectprod[index].imgpath),),
-                title: Text("Product ${index}"),
-                trailing: IconButton(onPressed: (){}, icon: Icon(Icons.remove),),
-              ),);
+              return Card(
+                child: ListTile(
+                  subtitle: Text(
+                      "${cartt.selectprod[index].price} - ${cartt.selectprod[index].locname}"),
+                  leading: CircleAvatar(
+                    backgroundImage:
+                        AssetImage(cartt.selectprod[index].imgpath),
+                  ),
+                  title: Text("Product ${index}"),
+                  trailing: IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.remove),
+                  ),
+                ),
+              );
             },
             padding: const EdgeInsets.all(8),
             itemCount: cartt.selectprod.length,

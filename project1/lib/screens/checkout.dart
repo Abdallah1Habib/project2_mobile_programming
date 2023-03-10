@@ -26,6 +26,9 @@ class Checkout extends StatelessWidget {
             itemBuilder: (BuildContext context, int index) {
               return Card(child: ListTile(
                 subtitle: ,
+                leading: CircleAvatar(backgroundImage: AssetImage(),),
+                title: ,
+                trailing: IconButton(onPressed: (){}, icon: Icon(Icons.remove),),
               ),);
             },
             padding: const EdgeInsets.all(8),

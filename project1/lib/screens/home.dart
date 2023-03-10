@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:project1/constants.dart';
 import 'package:project1/provider/cart.dart';
 import 'package:project1/screens/details.dart';
+import 'package:project1/widgets/appbar.dart';
 import 'package:provider/provider.dart';
 
 import '../model/items.dart';
@@ -72,7 +73,7 @@ class homepage extends StatelessWidget {
           }),
         ),
         actions: [
-          //here
+          CustApp(),
         ],
       ),
       body: Padding(

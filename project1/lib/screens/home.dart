@@ -97,7 +97,7 @@ class homepage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(right: 12),
                   child: Text(
-                    "\$ 15",
+                    "\$ ${newx.price}",
                     style: TextStyle(color: Colors.black),
                   ),
                 ),

@@ -47,8 +47,16 @@ class Checkout extends StatelessWidget {
               ),
             ),
           ),
-          ElevatedButton(onPressed: () {}, child: Text("Pay ${cartt.price}",style: TextStyle(fontSize: 19),),
-          style: ,)
+          ElevatedButton(
+            onPressed: () {},
+            child: Text(
+              "Pay ${cartt.price}",
+              style: TextStyle(fontSize: 19),
+            ),
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(paybuttoncolor),
+            ),
+          )
         ],
       ),
     );

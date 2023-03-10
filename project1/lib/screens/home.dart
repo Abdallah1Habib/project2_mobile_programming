@@ -70,10 +70,10 @@ class homepage extends StatelessWidget {
           }),
         ),
         actions: [
-          Row(
-            children: [
-              Consumer<Cart>(builder: ((context, newx, child) {
-                return Stack(
+          Consumer<Cart>(builder: ((context, newx, child) {
+            Row(
+              children: [
+                Stack(
                   children: [
                     Positioned(
                       bottom: 24,
@@ -93,17 +93,17 @@ class homepage extends StatelessWidget {
                       icon: const Icon(Icons.add_shopping_cart),
                     ),
                   ],
-                );
-              })),
-              const Padding(
-                padding: EdgeInsets.only(right: 12),
-                child: Text(
-                  "\$ 15",
-                  style: TextStyle(color: Colors.black),
                 ),
-              ),
-            ],
-          ),
+                Padding(
+                  padding: EdgeInsets.only(right: 12),
+                  child: Text(
+                    "\$ 15",
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ),
+              ],
+            );
+          }))
         ],
       ),
       body: Padding(
